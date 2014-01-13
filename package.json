@@ -1,6 +1,6 @@
 {
   "name": "lstack",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Push and pop data to a stack from the command line",
   "main": "index.js",
   "preferGlobal": true,
