@@ -1,0 +1,75 @@
+.\" Generated with Ronnjs 0.3.8
+.\" http://github.com/kapouer/ronnjs/
+.
+.TH "LSTACK" "1" "January 2014" "" ""
+.
+.SH "NAME"
+\fBlstack\fR \-\- Push and pop data to a stack from the command line
+.
+.SH "SYNOPSIS"
+\fBlstack\fR [\-hvV] [push|pop] <arg>
+.
+.SH "OPTIONS"
+  \-h      display this message
+  \-v      display verbose output
+  \-V      output program version
+.
+.SH "COMMANDS"
+  push    push to stack
+  pop     pop from stack
+.
+.SH "USAGE"
+.
+.SS "push"
+  \fB
+  $ lstack push foo
+  \fR
+.
+.P
+  \.\.or from stdin
+.
+.P
+  \fB
+  $ echo bar | lstack push
+  \fR
+.
+.SS "pop"
+  \fB
+  $ lstack pop
+  bar
+  \fR
+.
+.P
+  Use the \fB\-v\fR flag for verbose output\.
+.
+.P
+  \fB
+  $ lstack push 123 \-v
+  verbose: stack empty
+  verbose: put (1) 123\.\.\.
+  verbose: write ok
+  \fR
+.
+.SH "AUTHOR"
+.
+.IP "\(bu" 4
+Joseph Werle \fIjoseph\.werle@gmail\.com\fR
+.
+.IP "" 0
+.
+.SH "REPORTING BUGS"
+.
+.IP "\(bu" 4
+\fIhttps://github\.com/jwerle/lstack/issues\fR
+.
+.IP "" 0
+.
+.SH "SEE ALSO"
+.
+.IP "\(bu" 4
+\fIhttps://github\.com/jwerle/lstack\fR
+.
+.IP "" 0
+.
+.SH "LICENSE"
+MIT
